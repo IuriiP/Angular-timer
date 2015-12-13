@@ -3,13 +3,9 @@
 This directive build an array of the named objects in the root scope and change it's values (up or down) each 1 sec.
 You can use the named object's properties.
 
-Directive
+Directive (Tag or Class)
 ---------
-<timer [id] [value] [countdown [onzero]]>
-</timer>
-
-<div class="timer" [id] [value] [countdown [onzero]]>
-</div>
+timer [id] [value] [countdown [onzero]]
 
 Attributes
 ----------
@@ -21,14 +17,19 @@ Attributes
 Object properties
 -----------------
 ### for countUp timer (time indicator)
+
 - *fulldate* = full date in string format
 - *year* = year (4 digits)
 - *week* = day of week
+- 
 ### for countDown timer (remains timer)
+
 - *fulldate* = CURRENT full date in string format
 - *year* = 0
 - *week* = 0
+- 
 ### for any timer
+
 - *month* = current month (2 digits)
 - *day* = current/remaining days (2 digits)
 - *days* = current/ramaining days (w/o leading zero)
