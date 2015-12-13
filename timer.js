@@ -105,6 +105,8 @@ angular.module('timerApp', [])
 //                    console.log(id + '.newtime = ' + newValue);
                     if (newValue) {
                         $rootScope[id].counter = parseInt(newValue, 10);
+                        $rootScope[id].increment = -1;
+                        $rootScope[id].onZero = attrs.onzero;
                         $scope.startTimer(id);
                     }
                 });
