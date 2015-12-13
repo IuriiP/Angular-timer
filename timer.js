@@ -13,7 +13,7 @@ angular.module('timerApp', [])
                         if (timer.counter <= 0) {
                             $scope.timers[id] = false;
                             if (timer.onZero) {
-//                                console.log('eval ' + timer.onZero);
+                                console.log('eval ' + timer.onZero);
                                 $scope.$eval(timer.onZero);
                             }
                         }
