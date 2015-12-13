@@ -9,7 +9,7 @@ angular.module('timerApp', [])
                 for (var id in $scope.timers) {
                     if ($scope.timers[id]) {
                         var timer = updateTimer(id);
-//                        console.log(timer.counter);
+                        console.log(timer.counter);
                         if (timer.counter <= 0) {
                             $scope.timers[id] = false;
                             if (timer.onZero) {
